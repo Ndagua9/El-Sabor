@@ -1,0 +1,1990 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #D2001A;
+    max-width: 100%;
+    background-color: #EFEFEF;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    color: black;
+}
+h2 {
+    color: black;
+
+}
+h3{
+    color:black;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#EFEFEF 
+}
+
+a:hover{
+    color:#FFDE00;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    background-color:#D2001A;
+    color: #EFEFEF;
+    padding: 15px 20px;
+    flex-wrap: nowrap;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    z-index: 1000;
+}
+.header .logo img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex; /* Para menú de escritorio */
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+}
+
+.nav-menu a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #EFEFEF;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #FFDE00;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    margin: 0 15px;
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: #FFFAE7;
+    font-weight: bold;
+}
+
+header .idioma select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.banner{
+    background-image: url('../images/Portada\ pagina\ web.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 600px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 101%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.banner h1{
+  font-family: "pacifico", cursive;
+  font-weight: 400;
+  font-size: 85px;
+  font-style: normal;
+  color:#EFEFEF;
+  text-shadow: 5px 5px black;
+}
+
+.destacados{ 
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    background-color: #FFFAE7;
+    width: 101%;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.seccion {
+    background-color:#FFFAE7;
+    width: 20%;
+    min-width: 10px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.seccion img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.seccion h3 { 
+    text-align: center;
+}
+
+.seccion a{
+    display: inline-block;
+    background-color: #D2001A;
+    color: #EFEFEF;
+    padding:15px 15px;
+    border-radius: 15px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+.seccion a:hover{
+    color:#FFDE00;
+}
+
+.content{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #FFFAE7;
+    margin: 0px 0;
+    padding: 50px 5%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
+}
+.text-container{
+    background-color: #fffae7;
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.9;
+    color: black;
+    font-size: 19px;
+    
+}
+.content img {
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+.contentaborrajados{   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #FFFAE7;
+    margin: 0px 0;
+    padding: 50px 5%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    
+}
+.content text{
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.content img {
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover;
+}
+
+.footer{
+    background-color: #D2001A;
+    color: #EFEFEF;
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    font-size: 18px;
+}
+
+.footer h3{
+    font-family:'pacifico', cursive;
+    margin: 0px 0;
+    color:#EFEFEF;
+    font-size: 30px;
+}
+
+.social-icons img{
+    width: 80px;
+    height: 80px;
+    margin: 0 12px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/*Segunda Pagina Platos*/
+.bannerplatos{
+    background-image: url('../images/Pagina\ platos\ tipicos.jpg');
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align:center;
+}
+.bannerplatos h1{
+  font-family: "pacifico", cursive;
+  font-weight: 400;
+  font-size: 75px;
+  font-style: normal;
+  color:#EFEFEF;
+  text-shadow: 5px 5px black;
+}
+
+
+.container-platos{
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: #FFFAE7;
+    border-radius: 8px;
+}
+/*Seccion Sancocho*/
+.sancochos{
+    background-color:  #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-sancocho h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-sancocho p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-sancocho img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Arroz Atollado*/
+.arroz-atollado{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  /*  box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-arroz h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-arroz p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+.image-arroz img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion chuleta*/
+.chuleta{
+     background-color:  #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+     align-items: center;
+}
+
+.tex-chuleta h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-chuleta p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-chuleta img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+     margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Tamales*/
+.tamales{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-tamales h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-tamales p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-tamales img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Chontaduro*/
+.chontaduro{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-chontaduro h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-chontaduro p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-chontaduro img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+/*Seccion Empanadas*/
+.empanadas{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-empanadas h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-empanadas p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-empanadas img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Marranitas*/
+.marranitas{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-marranitas h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-marranitas p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-marranitas img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Aborrajados Vallunos*/
+.aborrajadosvallunos{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-aborrajadosvallunos h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-aborrajadosvallunos p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-aborrajadosvallunos img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Pandebonos*/
+.pandebono{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-pandebono h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-pandebono p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-pandebono img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Cholado*/
+.cholado{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-cholado h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-cholado p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-cholado img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Champus*/
+.champus{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-champus h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-champus p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-champus img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Lulada*/
+.lulada {
+        background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+
+
+.tex-lulada h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-lulada p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-lulada img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Manjar Blanco*/
+.manjar{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-manjar h2{
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-manjar p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex: 1;
+}
+
+.image-manjar img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Tercer Pagina Restaurantes*/
+.bannerrestaurante{
+    background-image: url('../images/Restaurantes.jpg');
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bannerrestaurante h1{
+  font-family: "pacifico", cursive;
+  font-weight: 400;
+  font-size: 75px;
+  font-style: normal;
+  color:#EFEFEF;
+  text-shadow: 5px 5px black;
+}
+
+.containerrestaurante{
+    max-width: 100%;
+    margin-top: 20px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #FFFAE7;
+    border-radius: 8px;
+    flex-direction: row-reverse;
+}
+/*Seccion platillos Voladores*/
+.platillosvoladores{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.tex-platillosvola h2{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-platillosvola p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-platillos img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 5px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Basilla*/
+.basilla{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-basilla h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-basilla p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-basilla img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Bosque*/
+.bosque{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.tex-bosque h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-bosque p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+.image-bosque img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 5px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Ringlete*/
+.ringlete{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tex-ringlete h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-ringlete p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-ringlete img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Hema*/
+.hema{
+    background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.tex-hema h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-hema p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+.image-hema img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 5px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion Morada*/
+.morada{
+       background-color: #FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-morada h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-morada p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-morada img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+/*Seccion casona*/
+.casona{
+    background-color:#FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.tex-casona h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-casona p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-casona img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 50px;
+    padding-right: 5px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+/*Seccion antojitos*/
+.antojitos{
+    background-color:#FFFAE7;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: flex;
+    align-items: center;
+}
+
+.tex-antojitos h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: black;
+    margin-left: 50px;
+}
+
+.tex-antojitos p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    line-height: 1.9;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    flex:1;
+}
+
+.image-antojitos img{
+    object-fit: contain;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    max-width: 100%;
+    max-width: 500px;
+}
+
+
+/*Cuarta Pagina Eventos y Festivales*/
+.bannereventos{
+    background-image: url('../images/Eventos.jpg');
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bannereventos h1{
+  font-family: "pacifico", cursive;
+  font-weight: 400;
+  font-size: 75px;
+  font-style: normal;
+  color:#EFEFEF;
+  text-shadow: 5px 5px black;
+}
+
+.container-eventos{
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #FFFAE7;
+    border-radius: 8px;
+}
+
+/*Seccion Cali Cocina*/
+.cali-cocina{
+    background-color: #EFEFEF;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.cali-cocina h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 50px;
+    padding-left: 35px;
+}
+
+.tex-cali-cocina p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3px;
+    line-height: 1.9;
+    color: black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+    flex: 2;
+    order: 1;
+}
+.image-cali-cocina{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30 px 30 px 20px;
+    order: 2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.image-cali-cocina img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0;
+}
+
+/*Seccion Cali Burger Festivañ*/
+.burger{
+    background-color: #EFEFEF;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.burger h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 50px;
+    padding-left: 35px;
+}
+
+.tex-burger p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3px;
+    line-height: 1.9;
+    color: black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+    flex: 2;
+    order: 1;
+}
+.image-burger{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30 px 30 px 20px;
+    order: 2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.image-burger img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+/*Seccion Feria de Cali*/
+.feria{
+    background-color: #EFEFEF;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.feria h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 50px;
+    padding-left: 35px;
+}
+
+.tex-feria p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3px;
+    line-height: 1.9;
+    color: black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+    flex: 2;
+    order: 1;
+}
+.image-feria{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30 px 30 px 20px;
+    order: 2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.image-feria img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+/*Seccion Festival de Macetas*/
+.macetas{
+    background-color: #EFEFEF;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.macetas h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 50px;
+    padding-left: 35px;
+}
+
+.tex-macetas p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3px;
+    line-height: 1.9;
+    color: black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+    flex: 2;
+    order: 1;
+}
+.image-macetas{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30 px 30 px 20px;
+    order: 2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.image-macetas img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+/*Seccion Petronio Alvarez*/
+.petronio{
+    background-color: #EFEFEF;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.petronio h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 50px;
+    padding-left: 35px;
+}
+
+.tex-petronio p{
+   text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 3px;
+    line-height: 1.9;
+    color: black;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 20px;
+    flex: 2;
+    order: 1;
+}
+.image-petronio{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30 px 30 px 20px;
+    order: 2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.image-petronio img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+/* Media Queries pagina Inicio*/
+
+/* RESPONSIVE*/
+/* ====================== */
+
+/* Tablet (768px - 992px) */
+@media (max-width: 992px) {
+  .banner, .bannerplatos, .bannerrestaurante, .bannereventos {
+    height: 250px;
+  }
+  
+  .banner h1, .bannerplatos h1, .bannerrestaurante h1, .bannereventos h1 {
+    font-size: 3.5rem;
+  }
+  
+  .content, .contentaborrajados {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  
+  .content img, .contentaborrajados img {
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  .text-container {
+    padding: 0;
+  }
+  
+  .destacados {
+    justify-content: flex-start;
+  }
+  
+  .seccion {
+    width: 45%;
+    min-width: 200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .content, .contentaborrajados {
+        flex-direction: column;
+    }
+    .content img {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .seccion {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .destacados {
+        padding: 20px 10px;
+    }
+    .content, .contentaborrajados {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .content img,
+    .contentaborrajados img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contentaborrajados {
+        flex-direction: column;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+        margin: 0 8px;
+    }
+}
+
+/* Móvil Grande (576px - 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+  
+  .banner, .bannerplatos, .bannerrestaurante, .bannereventos {
+    height: 200px;
+  }
+  
+  .banner h1, .bannerplatos h1, .bannerrestaurante h1, .bannereventos h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px black;
+  }
+   .seccion {
+        width: 50%;
+        max-width: 350px;
+    }
+
+    .destacados {
+        padding: 20px 10px;
+    }
+}
+
+/* Móvil pequeño (390px - 844px) */
+@media (max-width: 844px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+  
+  .banner, .bannerplatos, .bannerrestaurante, .bannereventos {
+    height: 200px;
+  }
+  
+  .banner h1, .bannerplatos h1, .bannerrestaurante h1, .bannereventos h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px black;
+  }
+  
+    .destacados {
+        padding: 10px 10px;
+    }
+  
+  .seccion {
+    width: 20%;
+    min-width: 30%;
+  }
+  .seccion h3 {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+  .seccion a {
+        padding: 10px 10px;
+        font-size: 10px;
+}
+}
+  
+ /* Media Queries pagina Platos Tipicos*/
+
+/* RESPONSIVE*/
+/* ====================== */ 
+
+/* Tablet (768px - 992px) */
+@media (max-width: 992px) {
+
+ .bannerplatos {
+    height: 150px;
+  }
+  .container-platos{
+    padding: 20px;
+  }
+  .sancochos, .arroz-atollado, .chuleta, 
+  .tamales, .chontaduro, .empanadas, 
+  .marranitas, .aborrajadosvallunos, 
+  .pandebono, .cholado, .champus, 
+  .lulada, .manjar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .image-sancocho, .image-arroz, .image-chuleta,
+  .image-tamales, .image-chontaduro, .image-empanadas,
+  .image-marranitas, .image-aborrajadosvallunos,
+  .image-pandebono, .image-cholado, .image-champus,
+  .image-lulada, .image-manjar {
+    width: 80%;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  .tex-sancocho p, .tex-arroz p, .tex-chuleta p,
+  .tex-tamales p, .tex-chontaduro p, .tex-empanadas p,
+  .tex-marranitas p, .tex-aborrajadosvallunos p,
+  .tex-pandebono p, .tex-cholado p, .tex-champus p,
+  .tex-lulada p, .tex-manjar p,
+  .tex-cali-cocina p, .tex-burger p, .tex-feria p,
+  .tex-macetas p, .tex-petronio p {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+  /* Media Queries pagina Restaurantes*/
+
+/* RESPONSIVE*/
+/* ====================== */ 
+@media (max-width: 992px) {
+
+ .bannerrestaurante {
+    height: 150px;
+  }
+  .container-restaurante{
+    padding: 20px;
+  }
+  
+  .platillosvoladores, .basilla, .bosque,
+  .ringlete, .hema, .morada, .casona, .antojitos {
+    flex-direction: column;
+  }
+  .image-platillos, .image-basilla, .image-bosque, .image-ringlete, .image-hema, .image-morada, .image-casona, .image-antojitos{
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    height: auto;
+    display: block;  
+  }
+
+  .tex-platillosvola, .tex-basilla, .tex-bosque,
+  .tex-ringlete, .tex-hema, .tex-casona, .tex-antojitos {
+    padding: 20px;
+    margin: 0;
+  }
+}
+    /* Media Queries pagina Eventos y Festivales*/
+
+/* RESPONSIVE*/
+/* ====================== */
+  /* Ajustes para eventos */
+
+@media (max-width: 992px) {
+  .cali-cocina, .burger, .feria,
+  .macetas, .petronio {
+    flex-direction: column;
+  }
+}
+
+/* Móvil Pequeño (hasta 576px) */
+@media (max-width: 576px) {
+  .banner h1, .bannerplatos h1, 
+  .bannerrestaurante h1, .bannereventos h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+  }
+  
+  .seccion a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+  }
+  
+}
+
+
+/* Mejoras de texto en móviles */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Menú Hamburguesa */
+.hamburger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1001;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.hamburger-box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 100%;
+    height: 3px;
+    background-color: #EFEFEF;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.2s;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #EFEFEF;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    top: 10px;
+}
+
+/* Estado activo */
+.hamburger.active .hamburger-inner {
+    background-color: transparent;
+}
+
+.hamburger.active .hamburger-inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Menú móvil */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block !important;
+    }
+    
+    .nav-menu {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        background: #D2001A;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-menu ul li {
+        margin: 0;
+    }
+}
+
+.idioma {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1001;
+    right: 30px;
+    top: 100%;
+    transform: translateY(-160%);
+}
+
+@media (max-width: 768px) {
+    .idioma {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1001;
+    left: -490px;
+    top: 50%;
+    transform: translateY(-100%);
+    }
+}
